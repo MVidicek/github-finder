@@ -13,6 +13,17 @@
     "ecmaVersion": 13,
     "sourceType": "module"
   },
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "plugins": ["react", "prettier"],
-  "rules": {}
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off"
+  }
 }

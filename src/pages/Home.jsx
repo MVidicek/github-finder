@@ -1,11 +1,7 @@
-import UserResults from '../components/users/UserResults';
+import UserResults from "../components/users/UserResults";
 
 function Home() {
-  return (
-    <>
-      <UserResults />
-    </>
-  );
+  return <UserResults />;
 }
 
 export default Home;
