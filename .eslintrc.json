@@ -26,6 +26,8 @@
     "object-shorthand": "off",
     "class-methods-use-this": "off",
     "react/jsx-no-constructed-context-values": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "react/prop-types": "off",
+    "react/forbid-prop-types": "off"
   }
 }

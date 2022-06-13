@@ -1,4 +1,4 @@
-const githubReducer = (action, state = {}) => {
+const githubReducer = (state, action) => {
   switch (action.type) {
     case "GET_USERS":
       return {

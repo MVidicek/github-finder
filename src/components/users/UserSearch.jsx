@@ -36,7 +36,7 @@ function UserSearch() {
               <input
                 type="text"
                 className="w-full pr-40 bg-gray-200 input input-lg text-black"
-                placeholder="Search for a user..."
+                placeholder="Search"
                 value={text}
                 onChange={handleChange}
               />
@@ -54,8 +54,8 @@ function UserSearch() {
         <div>
           <button
             type="submit"
-            className="btn btn-ghost btn-lg"
             onClick={() => dispatch({ type: "CLEAR_USERS" })}
+            className="btn btn-ghost btn-lg"
           >
             Clear
           </button>
