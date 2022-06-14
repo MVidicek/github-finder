@@ -24,17 +24,17 @@ function User() {
   const {
     name,
     type,
-    avatarUrl,
+    avatar_url,
     location,
     bio,
     blog,
-    twitterUsername,
+    twitter_username,
     login,
-    htmlUrl,
+    html_url,
     followers,
     following,
-    publicRepos,
-    publicGists,
+    public_repos,
+    public_gists,
     hireable,
   } = user;
 
@@ -42,7 +42,7 @@ function User() {
     return <Spinner />;
   }
 
-  const websiteUrl = blog?.startsWith("http") ? blog : `https://${blog}`;
+  const website_url = blog?.startsWith("http") ? blog : `https://${blog}`;
 
   return (
     <div className="w-full mx-auto lg:w-10/12">
@@ -56,7 +56,7 @@ function User() {
         <div className="custom-card-image mb-6 md:mb-0">
           <div className="rounded-lg shadow-xl card image-full">
             <figure>
-              <img src={avatarUrl} alt="" />
+              <img src={avatar_url} alt="" />
             </figure>
             <div className="card-body justify-end">
               <h2 className="card-title mb-0">{name}</h2>
@@ -77,7 +77,7 @@ function User() {
             <p>{bio}</p>
             <div className="mt-4 card-actions">
               <a
-                href={htmlUrl}
+                href={html_url}
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline"
@@ -98,22 +98,22 @@ function User() {
               <div className="stat">
                 <div className="stat-title text-md">Website</div>
                 <div className="text-lg stat-value">
-                  <a href={websiteUrl} target="_blank" rel="noreferrer">
-                    {websiteUrl}
+                  <a href={website_url} target="_blank" rel="noreferrer">
+                    {website_url}
                   </a>
                 </div>
               </div>
             )}
-            {twitterUsername && (
+            {twitter_username && (
               <div className="stat">
                 <div className="stat-title text-md">Twitter</div>
                 <div className="text-lg stat-value">
                   <a
-                    href={`https://twitter.com/${twitterUsername}`}
+                    href={`https://twitter.com/${twitter_username}`}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {twitterUsername}
+                    {twitter_username}
                   </a>
                 </div>
               </div>
@@ -150,7 +150,7 @@ function User() {
             </div>
             <div className="stat-title pr-5">Public Repos</div>
             <div className="stat-value pr-5 text-3xl md:text-4xl">
-              {publicRepos}
+              {public_repos}
             </div>
           </div>
 
@@ -160,7 +160,7 @@ function User() {
             </div>
             <div className="stat-title pr-5">Public Gists</div>
             <div className="stat-value pr-5 text-3xl md:text-4xl">
-              {publicGists}
+              {public_gists}
             </div>
           </div>
         </div>

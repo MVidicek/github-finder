@@ -28,6 +28,7 @@
     "react/jsx-no-constructed-context-values": "off",
     "no-shadow": "off",
     "react/prop-types": "off",
-    "react/forbid-prop-types": "off"
+    "react/forbid-prop-types": "off",
+    "camelcase": "off"
   }
 }
